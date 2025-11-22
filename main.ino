@@ -75,7 +75,7 @@ uint32_t pmToColor(float pm25) {
   if (pm25 <= 35) return strip.Color(255, 255, 0);    // Jaune
   if (pm25 <= 55) return strip.Color(255, 140, 0);    // Orange
   if (pm25 <= 150) return strip.Color(255, 0, 0);     // Rouge
-  return strip.Color(180, 0, 255);                    // Violet (super dangereux !)
+  return strip.Color(180, 0, 255);                    // Violet
 }
 
 // === Nombre de LEDs selon la température ===
@@ -186,3 +186,4 @@ void loop() {
     Serial.println("─────────────────────────────────────────────────────\n");
   }
 }
+
